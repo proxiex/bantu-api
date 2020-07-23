@@ -1,4 +1,6 @@
 from . import db
+from sqlalchemy import Column, Integer, DateTime
+from datetime import datetime
 
 
 class FootPrint(db.Model):
@@ -13,4 +15,4 @@ class FootPrint(db.Model):
    longitude = db.Column(db.String(250))
    city = db.Column(db.String(250))
    country = db.Column(db.String(250))
-
+   time_stamp = db.Column(db.DateTime, default=datetime.now())
