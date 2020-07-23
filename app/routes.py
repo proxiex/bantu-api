@@ -54,6 +54,7 @@ def list_footprints():
             "longitude": d.longitude,
             "city": d.city,
             "country": d.country,
+            "time_stamp": d.time_stamp
         })
 
     return make_response({'data': res})
